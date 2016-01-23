@@ -1,0 +1,22 @@
+.number-pad {
+  margin: auto;
+  width: 275px;
+}
+
+.row  {
+  display: flex;
+}
+
+.btn {
+  width: 60px;
+  height: 50px;
+  background-color: #ece6d6;
+  border-radius: 3px;
+
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.operation, .function {
+  background-color: #c0392b
+}

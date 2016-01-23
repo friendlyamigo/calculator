@@ -1,10 +1,41 @@
 $(document).on('ready', function () {
 
-  $('.btn-equals').on('click', function () {
-    var $input = $('.field-input').val();
-    var $output = $('.field-output');
+  var $output = $('.field-output');
+  var $input = $('.field-input')
 
-    $output.append($input);
+  function addOutput(answer) {
+    $output.empty();
+    $output.append(answer);
+    console.log(answer);
+  };
+
+
+  $('.btn-equals').on('click', function () {
+    var input = $input.val();
+
+    var answer = eval(input);
+
+    addOutput(answer);
+  });
+
+
+  $('.number').on('click', function (){
+    var $this = $(this)
+    var value = $this.attr('value');
+    var inputval = $input.val();
+
+    $input.val(inputval + value);
+    console.log(value);
+  });
+
+
+  $('.operation').on('click', function () {
+    var $this = $(this)
+    var value = $this.attr('value');
+    var inputval = $input.val();
+
+    $input.val(inputval + value);
+    console.log(value);
   });
 
 });

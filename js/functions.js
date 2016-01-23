@@ -21,14 +21,15 @@ $('.function').on('click', function () {
   // equals
   else if  (value == 'equals') {
     var input = $input.val();
-    var answer = eval(input);
+    var withPi = piFun(input);
+    var answer = eval(withPi);
 
     $output.empty();
     $output.append(answer)
 
     addOutput(answer);
 
-    console.log('equals')
+    console.log(input);
   }
 
 

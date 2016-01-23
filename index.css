@@ -29,7 +29,8 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-style: hidden;
-  margin: 0 15px; }
+  margin: 0 15px;
+  overflow: hidden; }
 
 .field-output {
   width: 270px;
@@ -37,7 +38,8 @@ body {
   outline: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin: 0 15px; }
+  margin: 0 15px;
+  overflow: hidden; }
 
 table {
   border-collapse: separate;

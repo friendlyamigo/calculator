@@ -39,20 +39,19 @@ body {
   border-bottom-right-radius: 5px;
   margin: 0 15px; }
 
+table {
+  border-collapse: separate;
+  border-spacing: 10px; }
+
 .number-pad {
   margin: auto;
   width: 275px; }
-
-.row {
-  display: flex; }
 
 .btn {
   width: 60px;
   height: 50px;
   background-color: #ece6d6;
-  border-radius: 3px;
-  justify-content: space-between;
-  margin: 5px; }
+  border-radius: 3px; }
 
 .operation, .function {
   background-color: #c0392b; }
@@ -79,7 +78,9 @@ body {
 .btn {
   color: #2c3e50;
   line-height: 50px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Noto Sans';
+  font-weight: bold; }
 
 .operation, .function {
   color: #ece6d6; }

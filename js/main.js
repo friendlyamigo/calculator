@@ -47,6 +47,6 @@ $('.operation').on('click', function () {
   console.log(value);
 });
 
-$(document).on('click', function () {
+$('canvas').on('click', function () {
   $('.graph').hide();
 });

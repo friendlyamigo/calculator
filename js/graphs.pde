@@ -1,7 +1,12 @@
 vex.defaultOptions.className = 'vex-theme-default';
 var a, b, c;
+a=1;
+b=2;
+c=3;
 
-$('.btn').on('click', function () {
+
+// to get values
+$('.btn-graph').on('click', function () {
 
   vex.dialog.prompt({
     message: 'Value for c:',
@@ -29,6 +34,16 @@ $('.btn').on('click', function () {
   });
 });
 
+
+
+
+
+
+
+
+
+
+
 void setup() {
   size(800, 402);
   frameRate(50);
@@ -37,15 +52,38 @@ void setup() {
 void draw()
 {
   background(255,255,255);
-
-
   var x = -10;
   var y;
+
+  // horizontal axis, x-axis, blue numbers
+  for(var i = -40;i<=40;i+=2)
+  {
+    strokeWeight(1);
+    stroke(196,196,196);
+    line(0, i*20,800,i*20);
+
+    fill(50, 50, 50);
+    textSize(10);
+    text(i, i*20+400, 200);
+  }
+
+  // vertical axis, y-axis, red numbers
+  for(var i =-40;i<=40;i+=2){
+      strokeWeight(1);
+      stroke(196,196,196);
+      line(i*10+400,0, i*10+400,400);
+
+      fill(50, 50, 50);
+      textSize(10);
+      if(i<22){
+      text(i*-1, 400, i*10+200);
+    }
+  }
 
   // Actual quadratic equation
   for(var i = 0;i<=20;i++)
   {
-    stroke(0,0,0);
+    stroke(192, 57, 43);
     strokeWeight(5);
     y = a*x*x+b*x+c;
     y2 = a*(x+1)*(x+1)+b*(x+1)+c;
@@ -58,39 +96,5 @@ void draw()
     popMatrix();
     resetMatrix();
     x+=1;
-    if (x > 100) {
-      exit();
-    }
-  }
-
-  // horizontal axis, x-axis, blue numbers
-  for(var i = -40;i<=40;i+=2)
-  {
-    strokeWeight(1);
-    stroke(0,0,0);
-    line(0, i*20,800,i*20);
-
-    fill(0,17,255);
-    textSize(10);
-    text(i, i*20+400, 200);
-    if (x > 100) {
-      exit();
-    }
-  }
-
-  // vertical axis, y-axis, red numbers
-  for(var i =-40;i<=40;i+=2){
-      strokeWeight(1);
-      stroke(0,0,0);
-      line(i*10+400,0, i*10+400,400);
-
-      fill(255,0,0);
-      textSize(10);
-      if(i<22){
-      text(i*-1, 400, i*10+200);
-      if (x > 100) {
-        exit();
-      }
-    }
   }
 }

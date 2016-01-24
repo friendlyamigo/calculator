@@ -1,12 +1,14 @@
 table {
   border-collapse: separate;
-  border-spacing: 8px;
+  border-spacing: 10px;
 }
+
 
 .number-pad {
   margin: auto;
   width: 275px;
 }
+
 
 .btn {
   width: 60px;
@@ -17,4 +19,8 @@ table {
 
 .operation, .function {
   background-color: #c0392b
+}
+
+.function[value="graphs"] {
+  background-color: #ece6d6;
 }

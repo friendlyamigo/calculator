@@ -46,3 +46,7 @@ $('.operation').on('click', function () {
   $input.val(inputval + value);
   console.log(value);
 });
+
+$(document).on('click', function () {
+  $('.graph').hide();
+});

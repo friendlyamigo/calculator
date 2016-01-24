@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="vex.css"/>
     <link rel="stylesheet" href="vex-theme-default.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css"/>
   </head>
   <body>
     <div class="calculator">
@@ -14,42 +15,41 @@
       </div>
       <table class="number-pad">
         <tr class="row first-row">
-          <td value="clear" class="btn function">clear</td>
-          <td value="negate" class="btn function">+/-</td>
-          <td value="pi" class="btn function">π</td>
-          <td value="+" class="btn operation">+</td>
+          <td value="clear" class="btn function"><a href="#">clear</a></td>
+          <td value="negate" class="btn function"><a href="#">+/-</a></td>
+          <td value="pi" class="btn function"><a href="#">π</a></td>
+          <td value="+" class="btn operation"><a href="#">+</a></td>
         </tr>
         <tr class="row second-row">
-          <td value="7" class="btn number">7</td>
-          <td value="8" class="btn number">8</td>
-          <td value="9" class="btn number">9</td>
-          <td value="-" class="btn operation">-</td>
+          <td value="7" class="btn number"><a href="#">7</a></td>
+          <td value="8" class="btn number"><a href="#">8</a></td>
+          <td value="9" class="btn number"><a href="#">9</a></td>
+          <td value="-" class="btn operation"><a href="#">-</a></td>
         </tr>
         <tr class="row third-row">
-          <td value="4" class="btn number">4</td>
-          <td value="5" class="btn number">5</td>
-          <td value="6" class="btn number">6</td>
-          <td value="/" class="btn operation">÷</td>
+          <td value="4" class="btn number"><a href="#">4</a></td>
+          <td value="5" class="btn number"><a href="#">5</a></td>
+          <td value="6" class="btn number"><a href="#">6</a></td>
+          <td value="/" class="btn operation"><a href="#">÷</a></td>
         </tr>
         <tr class="row fourth-row">
-          <td value="1" class="btn number">1</td>
-          <td value="2" class="btn number">2</td>
-          <td value="3" class="btn number">3</td>
-          <td value="*" class="btn operation">x</td>
+          <td value="1" class="btn number"><a href="#">1</a></td>
+          <td value="2" class="btn number"><a href="#">2</a></td>
+          <td value="3" class="btn number"><a href="#">3</a></td>
+          <td value="*" class="btn operation"><a href="#">x</a></td>
         </tr>
         <tr class="row fifth-row">
-          <td value="0" class="btn number">0</td>
-          <td value="." class="btn number">.</td>
-          <td value="graphs" class="btn function btn-graph">:D</td>
-          <td value="equals" class="btn function btn-equals">=</td>
+          <td value="0" class="btn number"><a href="#">0</a></td>
+          <td value="." class="btn number"><a href="#">.</a></td>
+          <td value="graphs" class="btn function btn-graph"><a href="#">:D</a></td>
+          <td value="equals" class="btn function btn-equals"><a href="#">=</a></td>
         </tr>
       </table>
     </div>
-
+    <div class="watermark"><a href="https://github.com/friendlyamigo/calculator"><span class="mega-octicon octicon-mark-github"></span></a></div>
     <div class="graph">
       <canvas data-processing-sources="js/graphs.pde"></canvas>
     </div>
-
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/processing-1.4.8.min.js"></script>
     <script src="js/vex.combined.min.js"></script>

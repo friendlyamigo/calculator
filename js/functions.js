@@ -70,8 +70,8 @@ $('.function').on('click', function () {
 
 
 
-  else {
-
+  else if (value == 'graphs') {
+    console.log('graph');
   };
 
 });

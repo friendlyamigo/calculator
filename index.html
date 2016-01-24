@@ -3,6 +3,8 @@
     <meta charset="UTF-8"/>
     <title>Calculator</title>
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="vex.css"/>
+    <link rel="stylesheet" href="vex-theme-default.css"/>
   </head>
   <body>
     <div class="calculator">
@@ -38,12 +40,19 @@
         <tr class="row fifth-row">
           <td value="0" class="btn number">0</td>
           <td value="." class="btn number">.</td>
-          <td value=" " class="btn number">:D</td>
+          <td value="graphs" class="btn function">:D</td>
           <td value="equals" class="btn function btn-equals">=</td>
         </tr>
       </table>
     </div>
+
+    <div class="graph">
+      <canvas data-processing-sources="js/graphs.pde"></canvas>
+    </div>
+
     <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/processing-1.4.8.min.js"></script>
+    <script src="js/vex.combined.min.js"></script>
     <script src="js/eli.js"></script>
     <script src="js/main.js"></script>
     <script src="js/functions.js"></script>

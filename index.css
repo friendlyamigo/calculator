@@ -58,6 +58,9 @@ table {
 .operation, .function {
   background-color: #c0392b; }
 
+.function[value="graphs"] {
+  background-color: #ece6d6; }
+
 @font-face {
   font-family: 'Digital';
   src: url("fonts/digital/digital-7 (mono).ttf"); }
@@ -86,3 +89,9 @@ body {
 
 .operation, .function {
   color: #ece6d6; }
+
+.function[value="graphs"] {
+  color: #2c3e50; }
+
+.graph {
+  display: none; }

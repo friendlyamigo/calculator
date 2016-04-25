@@ -16,7 +16,7 @@
       <table class="number-pad">
         <tr class="row first-row">
           <td value="clear" class="btn function"><a href="#">clear</a></td>
-          <td value="negate" class="btn function"><a href="#">+/-</a></td>
+          <td value="caret" class="btn function"><a href="#">^</a></td>
           <td value="pi" class="btn function"><a href="#">π</a></td>
           <td value="+" class="btn operation"><a href="#">+</a></td>
         </tr>
@@ -48,13 +48,19 @@
     </div>
     <div class="watermark"><a href="https://github.com/friendlyamigo/calculator"><span class="mega-octicon octicon-mark-github"></span></a></div>
     <div class="graph">
-      <canvas data-processing-sources="js/graphs.pde"></canvas>
+        <div class="canvas">
+            <div class="graph-equation"></div>
+            <div class="graph-here"></div>
+        </div>
     </div>
     <script src="js/jquery-1.12.0.min.js"></script>
-    <script src="js/processing-1.4.8.min.js"></script>
+    <!-- <script src="js/processing-1.4.8.min.js"></script> -->
+    <script src="js/d3.js"></script>
+    <script src="js/math-3.2.0.js"></script>
+    <script src="js/function-graph.js"></script>
     <script src="js/vex.combined.min.js"></script>
     <script src="js/eli.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

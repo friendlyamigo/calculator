@@ -8,8 +8,19 @@
   height: 100%;
 }
 
-canvas {
-  position: absolute;
-  top: 10%;
-  left: calc(50% - 400px);
+.canvas {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.graph-equation {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.canvas {
+    @include centerer;
 }

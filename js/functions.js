@@ -22,10 +22,10 @@ $('.function').on('click', function () {
   else if  (value == 'equals') {
     var input = $input.val();
     var withPi = piFun(input);
-    var answer = eval(withPi);
+    var answer = math.eval(withPi);
 
     $output.empty();
-    $output.append(answer)
+    $output.append(answer);
 
     addOutput(answer);
 
@@ -64,6 +64,20 @@ $('.function').on('click', function () {
     $input.val($value + 'π');
 
     console.log('pi');
+  }
+
+
+
+
+  // caret
+  else if (value == "caret") {
+      empty();
+
+      var $value = $input.val();
+
+      $input.val($value + '^');
+
+      console.log('caret');
   }
 
 
